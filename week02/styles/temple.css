@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 24;
+}
