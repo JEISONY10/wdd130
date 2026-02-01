@@ -7,7 +7,9 @@
 }
 
 /* Reset */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,7 +21,9 @@ body {
   color: var(--accent1-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
@@ -32,15 +36,14 @@ header {
 
 header img {
   width: 80px;
+  display: block;
   margin-bottom: 12px;
 }
 
-header nav ul {
-  list-style: none;
-}
-
-header nav li {
-  margin: 6px 0;
+header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 header nav a {
@@ -50,12 +53,16 @@ header nav a {
 }
 
 /* Headings */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
