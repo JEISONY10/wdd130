@@ -1,95 +1,100 @@
-/* Colors and fonts */
-:root {
-    --primary-color: #2a6f97;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
-    --heading-font: Georgia, serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-/* Reset */
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Page style */
+/* CSS Variables */
+:root {
+    --primary-color: #0077b6;
+    --accent-color: #90e0ef;
+    --text-color: #000000;
+}
+
+/* Body */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
 }
 
-/* Center the page */
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
 }
 
-/* Headings */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+header .logo {
+    height: 50px;
 }
 
-/* Basic spacing */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
 }
 
-/* Hero section */
+/* Hero Section */
 .hero {
     position: relative;
+    text-align: left;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
-/* Title on top of hero image */
 .hero h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
-    text-align: center;
-    background-color: var(--accent1-color);
+    left: 20px;
     color: white;
-    padding: 10px;
-    opacity: 0.8;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
 }
 
-/* Article on hero image */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    max-width: 400px;
 }
 
-/* Image inside article */
 .hero article img {
     float: right;
-    width: 120px;
+    width: 80px;
+    height: 80px;
     margin-left: 10px;
 }
 
-/* Social media icons */
-.socialmedia a {
-    text-decoration: none;
+/* Sections */
+section {
+    padding: 20px;
 }
 
-.socialmedia img {
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+footer .socialmedia {
+    margin-top: 10px;
+}
+
+footer .socialmedia a img {
     width: 30px;
     height: 30px;
-    margin: 5px;
+    margin: 0 5px;
 }
