@@ -92,7 +92,7 @@ header nav a {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: var(--accent2-color);
     padding: 12px;
     max-width: 420px;
 }
@@ -107,6 +107,7 @@ header nav a {
 /* Sections */
 section {
     padding: 20px;
+    background-color: var(--secondary-color);
 }
 
 /* Footer */
