@@ -1,168 +1,234 @@
 /* Universal Reset */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* CSS Variables */
 :root {
---primary-color: #0077b6;
---secondary-color: #90e0ef;
---accent1-color: #023e8a;
---accent2-color: #caf0f8;
+  --primary-color: #0077b6;
+  --secondary-color: #90e0ef;
+  --accent1-color: #023e8a;
+  --accent2-color: #caf0f8;
 
---heading-font: Georgia, serif;
---body-font: Arial, Helvetica, sans-serif;
+  --heading-font: Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
 
---text-color: #000000;
+  --text-color: #000000;
 }
 
 /* Body */
 body {
-font-family: var(--body-font);
-line-height: 1.6;
-color: var(--text-color);
+  font-family: var(--body-font);
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
 /* Page Width */
 header,
 main,
 footer {
-max-width: 840px;
-margin: 0 auto;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 /* Headings */
 h1,
 h2 {
-font-family: var(--heading-font);
-color: var(--primary-color);
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
 
 /* Header Layout (GRID) */
 header {
-display: grid;
-grid-template-columns: 200px 1fr;
-align-items: center;
-background-color: var(--primary-color);
-color: white;
-padding: 15px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
 }
 
 /* Logo */
 header img {
-height: 60px;
+  height: 60px;
 }
 
 /* Navigation (FLEX) */
 nav ul {
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
 }
 
 nav a {
-color: white;
-text-decoration: none;
-font-weight: bold;
-padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
 }
 
 /* HERO SECTION */
 .hero {
-position: relative;
+  position: relative;
 }
 
 .hero img {
-width: 100%;
-display: block;
-height: auto;
+  width: 100%;
+  display: block;
+  height: auto;
 }
 
 /* Hero Title */
 .hero h1 {
-position: absolute;
-top: 20px;
-width: 100%;
-text-align: center;
-background-color: var(--accent1-color);
-color: white;
-padding: 12px;
-opacity: 0.9;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 12px;
+  opacity: 0.9;
 }
 
 /* Hero Article */
 .hero article {
-position: absolute;
-bottom: 20px;
-left: 20px;
-background-color: var(--accent2-color);
-padding: 12px;
-max-width: 420px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--accent2-color);
+  padding: 12px;
+  max-width: 420px;
 }
 
 /* Article Image */
 .hero article img {
-float: right;
-width: 125px;
-margin-left: 10px;
+  float: right;
+  width: 125px;
+  margin-left: 10px;
 }
 
 /* HISTORY SECTION */
 .history {
-padding: 20px;
-background-color: var(--secondary-color);
+  padding: 20px;
+  background-color: var(--secondary-color);
 }
 
 /* ADVENTURE SECTION */
 .adventures {
-padding: 20px;
+  padding: 20px;
 }
 
 .adventure-gallery {
-display: flex;
-justify-content: space-between;
-gap: 10px;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .adventure-gallery figure {
-text-align: center;
+  text-align: center;
 }
 
 .adventure-gallery img {
-width: 150px;
-height: 100px;
-object-fit: cover;
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .adventure-gallery figcaption {
-margin-top: 5px;
-font-size: 0.9rem;
+  margin-top: 5px;
+  font-size: 0.9rem;
 }
 
 /* FOOTER */
 footer {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: var(--primary-color);
-color: white;
-padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
 }
 
 /* Social Media Icons */
 .socialmedia {
-display: flex;
-gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .socialmedia a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .socialmedia img {
-width: 30px;
+  width: 30px;
+}
+
+/* =================== */
+/* CONTACT US PAGE RULES */
+/* =================== */
+
+/* Form Section */
+.contact-form {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
+
+/* Employee Profiles */
+.employees {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.employees figure {
+  text-align: center;
+}
+
+.employees img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Google Map */
+.company-info iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  margin-top: 10px;
 }
